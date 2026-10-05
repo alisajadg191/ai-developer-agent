@@ -6,6 +6,8 @@ Investigate fictional microservice incidents, inspect the evidence behind a repo
 
 > **All service health, logs and deployments are simulated.** This is a learning and portfolio project, not a production incident-management system. Demo mode uses templates; Local AI mode genuinely calls Ollama. The UI labels the source of every result.
 
+**New to the project? Read the [project requirements and step-by-step walkthrough](docs/PROJECT_REQUIREMENTS.md)** for the purpose, features, request flow and acceptance checks.
+
 ## What it does
 
 - Investigates payment, order and inventory service scenarios.

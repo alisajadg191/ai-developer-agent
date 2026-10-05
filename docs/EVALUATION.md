@@ -9,7 +9,7 @@ Validation performed on 5 October 2026.
 | MCP SDK client/server integration tests | Passed |
 | Packaged JAR HTTP acceptance | Passed: 7 checks |
 | Packaged JAR serves the frontend | Passed |
-| Desktop/mobile Playwright suite | Added; local browser could not launch because the execution environment denies a required socket operation. Run in GitHub Actions or locally. |
+| Desktop/mobile Playwright suite | Passed: all 4 tests in GitHub Actions |
 | Live Ollama inference quality | Not evaluated in this environment |
 
 ## What the checks establish
@@ -18,7 +18,7 @@ Backend tests cover input validation, authoritative health and evidence, healthy
 
 The seven packaged-app acceptance checks cover payment, order, inventory and unknown services, plus three invalid requests. MCP tests use the official SDK to discover and invoke tools, including invalid input and unavailable-backend errors.
 
-The browser suite covers reports, JSON export, healthy/unknown states, mobile overflow and visible AI errors. A browser-launch restriction is not a passing browser test. Check the GitHub Actions result before treating the suite as verified.
+The browser suite covers reports, JSON export, healthy/unknown states, mobile overflow and visible AI errors. The local execution environment blocked browser launch; the suite subsequently passed on a GitHub-hosted runner. [Verified workflow run](https://github.com/alisajadg191/ai-developer-agent/actions/runs/37305971153) tested commit `d76aa67` including packaging, backend tests, MCP and all four browser checks.
 
 ## Evaluate your local model
 

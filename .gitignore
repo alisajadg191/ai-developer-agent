@@ -37,3 +37,12 @@ build/
 .env.*
 !.env.example
 .DS_Store
+
+# JavaScript dependencies, generated UI and browser test output
+**/node_modules/
+frontend/dist/
+frontend/test-results/
+frontend/playwright-report/
+src/main/resources/static/
+# Local model/runtime data
+*.log
